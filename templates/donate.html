@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donate Food</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f4f9f4;
+            color: #2e3d2f;
+        }
+
+        header {
+            background-color: #388e3c;
+            color: white;
+            text-align: center;
+            padding: 25px 0;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            font-weight: 600;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 50px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 15px;
+            font-weight: 500;
+            color: #333;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            margin-top: 20px;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #388e3c;
+        }
+
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 30px;
+            text-decoration: none;
+            color: #2e7d32;
+            font-weight: 500;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                margin: 30px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Donate Surplus Food</h1>
+    </header>
+
+    <div class="container">
+        <form action="/donate" method="POST">
+            <label>
+                Name:
+                <input type="text" name="name" required>
+            </label>
+            <label>
+                Food Type:
+                <input type="text" name="food_type" required>
+            </label>
+            <label>
+                Quantity (in kg or units):
+                <input type="number" name="quantity" required>
+            </label>
+            <label>
+                Location:
+                <input type="text" name="location" required>
+            </label>
+            <label>
+                Contact Email:
+                <input type="email" name="email" required>
+            </label>
+            <label>
+                Contact Phone:
+                <input type="tel" name="phone" required>
+            </label>
+            <button type="submit">Submit Donation</button>
+        </form>
+        <a class="back-link" href="/">← Back to Home</a>
+    </div>
+
+</body>
+
+</html>

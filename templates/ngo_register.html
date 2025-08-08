@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>NGO Registration</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+
+        * {
+
+            margin: 0;
+
+            padding: 0;
+
+            box-sizing: border-box;
+
+        }
+
+
+
+        body {
+
+            font-family: 'Inter', sans-serif;
+
+            background-color: #f0f9f0;
+
+            color: #2e3d2f;
+
+        }
+
+
+
+        header {
+
+            background-color: #388e3c;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 25px 0;
+
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
+        }
+
+
+
+        header h1 {
+
+            font-size: 2.3rem;
+
+            font-weight: 600;
+
+        }
+
+
+
+        .container {
+
+            max-width: 500px;
+
+            margin: 50px auto;
+
+            background-color: #ffffff;
+
+            padding: 35px;
+
+            border-radius: 12px;
+
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+        }
+
+
+
+        form label {
+
+            display: block;
+
+            font-weight: 500;
+
+            margin-bottom: 8px;
+
+        }
+
+
+
+        input {
+
+            width: 100%;
+
+            padding: 12px;
+
+            margin-bottom: 20px;
+
+            border: 1px solid #ccc;
+
+            border-radius: 8px;
+
+            font-size: 1rem;
+
+        }
+
+
+
+        button {
+
+            width: 100%;
+
+            background-color: #4caf50;
+
+            color: white;
+
+            border: none;
+
+            padding: 14px;
+
+            font-size: 1rem;
+
+            font-weight: 600;
+
+            border-radius: 8px;
+
+            cursor: pointer;
+
+            transition: background-color 0.3s ease;
+
+        }
+
+
+
+        button:hover {
+
+            background-color: #388e3c;
+
+        }
+
+
+
+        .back-link {
+
+            display: block;
+
+            text-align: center;
+
+            margin-top: 25px;
+
+            text-decoration: none;
+
+            color: #2e7d32;
+
+            font-weight: 500;
+
+        }
+
+
+
+        .back-link:hover {
+
+            text-decoration: underline;
+
+        }
+
+
+
+        @media (max-width: 600px) {
+
+            .container {
+
+                margin: 30px 20px;
+
+                padding: 25px;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+
+<body>
+
+
+
+    <header>
+
+        <h1>Register Your NGO</h1>
+
+    </header>
+
+
+
+    <div class="container">
+
+        <form action="/register-ngo" method="POST">
+
+            <label for="name">NGO Name</label>
+
+            <input type="text" id="name" name="name" placeholder="Helping Hands Foundation" required>
+
+
+
+            <label for="location">Location</label>
+
+            <input type="text" id="location" name="location" placeholder="Bhopal, MP" required>
+
+
+
+            <label for="need">Current Need</label>
+
+            <input type="number" id="need" name="need" required>
+
+
+
+            <label for="email">Contact Email</label>
+
+            <input type="email" id="email" name="email" placeholder="ngo@example.com" required>
+
+
+
+            <label for="phone">Phone Number</label>
+
+            <input type="tel" id="phone" name="phone" placeholder="9876543210" required>
+
+
+
+            <button type="submit">Register NGO</button>
+
+        </form>
+
+
+
+        <a class="back-link" href="/">← Back to Home</a>
+
+    </div>
+
+
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Food Waste to Food Aid</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f3fdf3;
+      color: #2e3d2f;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #388e3c;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-size: 2.7rem;
+      margin-bottom: 5px;
+      font-weight: 700;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 18px;
+      font-weight: 500;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #c8e6c9;
+    }
+
+    .hero {
+      position: relative;
+      background-image: url('https://images.unsplash.com/photo-1600880292089-90a7e086ee7d');
+      background-size: cover;
+      background-position: center;
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .hero-content {
+      position: relative;
+      max-width: 800px;
+      padding: 20px;
+      z-index: 1;
+    }
+
+    .hero-content h2 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+
+    .hero-content p {
+      font-size: 1.2rem;
+      font-weight: 400;
+    }
+
+    .section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .section h3 {
+      font-size: 2.2rem;
+      margin-bottom: 35px;
+      color: #2e7d32;
+      font-weight: 600;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 300px;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .card h4 {
+      margin-bottom: 10px;
+      font-size: 1.3rem;
+      color: #388e3c;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    .cta {
+      background-color: #e8f5e9;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .cta h3 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+      color: #2e7d32;
+    }
+
+    .cta p {
+      font-size: 1.1rem;
+      margin-bottom: 25px;
+    }
+
+    .cta a {
+      text-decoration: none;
+      background-color: #4caf50;
+      color: white;
+      padding: 12px 25px;
+      font-weight: 600;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta a:hover {
+      background-color: #388e3c;
+    }
+
+    footer {
+      background-color: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 768px) {
+      .cards {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .hero-content h2 {
+        font-size: 2.2rem;
+      }
+
+      .hero-content p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Food Waste to Food Aid</h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/donate">Donate Food</a>
+      <a href="/register-ngo">Register</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Turning Leftovers into Lifelines</h2>
+      <p>Together, we rescue food and deliver hope. Join our movement to fight hunger and reduce waste—one meal at a time.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h3>How It Works</h3>
+    <div class="cards">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1600891963933-5603c0b8e926" alt="Restaurant Donating">
+        <h4>Restaurants & Stores</h4>
+        <p>Our partner businesses list their surplus meals and produce on the platform.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1606131733881-c1f6df8efc8e" alt="NGO Matching">
+        <h4>Smart Matching</h4>
+        <p>We instantly match listed food with local NGOs that serve communities in need.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1575052814086-f385e2e2ad1b" alt="Volunteers Delivering">
+        <h4>Volunteer Delivery</h4>
+        <p>Our volunteers and partners ensure the food reaches people quickly and safely.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4" alt="Smiling families">
+        <h4>Impactful Results</h4>
+        <p>Every meal matters. Together we’ve fed thousands and built a stronger community.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h3>Be Part of the Change</h3>
+    <p>Your small action today can mean a full meal for someone tomorrow. Donate, volunteer, or spread the word!</p>
+    <a href="/donate">Get Involved</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 FoodAid Initiative. Made with care and compassion.</p>
+  </footer>
+
+</body>
+</html>
